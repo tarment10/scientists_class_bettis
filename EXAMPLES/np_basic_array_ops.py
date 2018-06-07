@@ -42,4 +42,12 @@ print("sum of a is {0}; sum of b is {1}".format(s1,s2))
 print()
 
 a += 1000
-print(a)
+print(a, '\n')
+
+def double(x):
+    return x * 2
+
+a = double(a)
+
+print(a, '\n')
+

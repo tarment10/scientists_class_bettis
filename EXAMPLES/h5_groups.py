@@ -2,6 +2,7 @@
 # (c) 2017 John Strickler
 #
 import h5py
+import numpy as np
 
 H5_FILE = '../DATA/h5/hdf5_test.h5'
 
@@ -15,3 +16,9 @@ print()
 print('datasets in /arrays:')
 for dataset in hfile['arrays']:
     print(dataset)
+
+dset = hfile['/Animals/bushbaby']
+
+x = np.array(dset)
+
+print(x)

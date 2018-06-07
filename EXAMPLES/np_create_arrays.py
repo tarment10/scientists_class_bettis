@@ -2,10 +2,11 @@
 import numpy as np
 
 # from nested sequences
-a = np.array([[1, 2.0, 3], [4, 5, 6], [7, 8, 9], [20, 30, 40]])
+a = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9], [20, 30, 40]])
 print(a)
 print("# dims", a.ndim)
 print("shape", a.shape)
+print("size", a.size)
 print()
 
 # with zeros
@@ -23,3 +24,7 @@ a_empty = np.empty([3,8])
 print(a_empty)
 
 print(a.dtype)
+
+x = np.ones([1000, 1000])
+print(x.size)
+print(x)

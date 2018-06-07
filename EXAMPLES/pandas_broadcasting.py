@@ -39,10 +39,15 @@ print()
 
 print_header("Multiply column gamma by 1.5")
 df['gamma'] *= 1.5
+
+print(df['gamma'].astype(int))
+
+
+
 print(df)
 print()
 
-print_header("Multiply by strings")
-df['gamma'] *= 'spam'
-print(df)
-print()
+# print_header("Multiply by strings")
+# df['gamma'] *= 'spam'
+# print(df)
+# print()

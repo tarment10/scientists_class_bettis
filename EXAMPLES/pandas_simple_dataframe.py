@@ -5,7 +5,7 @@
 Created on Sun May 19 20:42:32 2013
 
 '''
-from pandas.core.frame import DataFrame
+from pandas import DataFrame
 from printheader import print_header
 
 cols = ['alpha','beta','gamma','delta','epsilon']
@@ -33,3 +33,13 @@ print(df, '\n')
 
 print_header("df['gamma']")
 print(df['gamma'])
+
+print(df.head())
+print(df.tail())
+print()
+
+print(df.describe())
+print(df.shape)
+print(df.memory_usage(deep=True))
+
+
